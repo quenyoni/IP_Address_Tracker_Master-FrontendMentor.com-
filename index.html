@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+
+ 
+  <!-- <link rel="stylesheet" media="screen and (min-width:1100px)" href="./css/widescreen.css"> -->
+<link rel="stylesheet" media="screen and (min-width:769px)" href="./css/large.css">
+
+<link rel="stylesheet" media="screen and (min-width:1100px)" href="./css/widescreen.css">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.co tegrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Rubik:wght@400;500;700&display=swap');
+    </style>
+    <script src="./script.js" defer></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+    type="text/css"
+  />
+</head>
+<body>
+<div class="bg-pattern">
+
+</div>
+  
+  <div class="container">
+<div class="top">
+
+
+<h1 class="main-header">
+  IP Address Tracker
+</h1>
+
+<div class="search-bar"> 
+<input data-ip type="text" name="" id="" placeholder="Search for any IP address or domain">
+<button class="btn">
+  <ion-icon class="icon" size="large" name="chevron-forward-outline"></ion-icon>
+</button>
+</div>
+</div>
+
+<div class="data-output">
+  <div class="ip output">
+    <p class="title">IP Address</p>
+    <h2 data-ip-out class="out-info"></h2>
+  </div>
+  <div class="ip output">
+    <p class="title">Location</p>
+    <h2  data-loc-out class="out-info"></h2>
+  </div>
+  <div class="timezone output">
+    <p class="title">Timezone</p>
+    <h2  data-tz-out class="out-info"></h2>
+    <!-- add offset value dynamically using the API -->
+  </div>
+  <div class="isp output">
+    <p class="title">ISP</p>
+    <h2  data-isp-out class="out-info"></h2>
+  </div>
+</div>
+    
+  
+    
+  
+    
+  </div>
+
+  <div id="map"></div>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
